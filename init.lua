@@ -1,3 +1,5 @@
+dofile_once("mods/noita-streak-explorer/files/scripts/rewrite/entry.lua")
+
 -- function OnModPreInit()
 -- 	print("Mod - OnModPreInit()")
 -- end
