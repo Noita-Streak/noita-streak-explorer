@@ -8,6 +8,7 @@
       "luacheck",
       "msix",
       "noita",
-      "stackdump"
+      "stackdump",
+      "sumhexa"
     ],
 }
