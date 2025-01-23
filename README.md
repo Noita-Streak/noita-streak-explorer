@@ -9,9 +9,10 @@ Noita の MOD フォルダー以下に、本プロジェクトを DL してく�
 ## Tech Stack
 
 - VS Code
-  - Lua Lang Server (https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
-  - vscode-luacheck (https://github.com/dwenegar/vscode-luacheck)
-  - Noita Lua API (https://marketplace.visualstudio.com/items?itemName=evaisa.vscode-noita-api)
+  - [Lua Lang Server](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
+  - [StyLua](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.stylua)
+  - [Selene](https://marketplace.visualstudio.com/items?itemName=Kampfkarren.selene-vscode)
+  - [Noita Lua API](https://marketplace.visualstudio.com/items?itemName=evaisa.vscode-noita-api)
 - GitHub Actions
 - Lua5.1（Noita の組み込みバージョン）
 
