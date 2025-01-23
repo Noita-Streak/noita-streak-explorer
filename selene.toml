@@ -1,0 +1,3 @@
+std = "selene-noita+selene-busted"
+# VSCodeの拡張機能だと、excludeが考慮されていなさそう
+exclude = ["libs/*"]

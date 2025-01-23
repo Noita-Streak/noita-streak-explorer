@@ -1,0 +1,16 @@
+base: lua51
+globals:
+  dofile_once:
+    args:
+      - type: string
+        required: true
+  ModTextFileGetContent:
+    args:
+      - type: string
+        required: true
+  ModTextFileSetContent:
+    args:
+      - type: string
+        required: true
+      - type: string
+        required: true
