@@ -2,7 +2,6 @@ name: pr-check
 on: [push, pull_request]
 jobs:
   busted-test:
-    name: busted-test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,10 +18,8 @@ jobs:
         with:
           # Github secret token
           token: ${{ secrets.GITHUB_TOKEN }}
-          # selene arguments
-          args: --display-style=quiet .
           # selene version
-          version: 0.12.1
+          version: 0.28.0
   stylua-check:
     runs-on: ubuntu-latest
     steps:
