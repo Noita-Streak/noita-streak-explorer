@@ -18,6 +18,8 @@ jobs:
         with:
           # Github secret token
           token: ${{ secrets.GITHUB_TOKEN }}
+          # selene arguments
+          args: .
           # selene version
           version: 0.28.0
   stylua-check:
