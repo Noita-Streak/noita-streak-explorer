@@ -6,15 +6,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Run Busted
         uses: lunarmodules/busted@v2.2.0
         env:
           IS_GITHUB_ACTION: true
-  luacheck:
+  selene-lint-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Luacheck linter
-        uses: lunarmodules/luacheck@v1.2.0
+      - uses: actions/checkout@v4
+      - uses: NTBBloodbath/selene-action@v1.0.0
+        with:
+          # Github secret token
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # selene arguments
+          args: --display-style=quiet .
+          # selene version
+          version: 0.12.1
+  stylua-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: JohnnyMorganz/stylua-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: 2.0.2
+          # CLI arguments
+          args: --check .
