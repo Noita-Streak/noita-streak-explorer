@@ -3,14 +3,6 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,lua
 
 ### Lua ###
-# Compiled Lua sources
-luac.out
-
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
-
 # Object files
 *.o
 *.os
@@ -57,22 +49,6 @@ Icon
 
 # Thumbnails
 ._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
 
 ### Windows ###
 # Windows thumbnail cache files
