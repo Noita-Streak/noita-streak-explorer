@@ -1,4 +1,4 @@
-local file = dofile("/data/files/scripts/rewrite/perks/glass_cannon_enemy.lua")
+local target = dofile("/github/workspace/files/scripts/rewrite/perks/glass_cannon_enemy.lua")
 
 local test_items = {
     { title = "ダメージが0.2 * 3.0に置換されていること", input = { "damage = damage * 3.0" }, output = { "damage = damage * 0.2 * 3.0" } },
@@ -10,7 +10,7 @@ local test_items = {
 describe("code replace test", function()
     for _, test_case in ipairs(test_items) do
         it(test_case.title, function()
-            local result = file.rewrite_code(test_case.input[1])
+            local result = target.rewrite_code(test_case.input[1])
             assert.are.same(result, test_case.output[1])
         end)
     end
