@@ -30,6 +30,7 @@ local function rewrite()
 
   content = rewrite_code(content)
   ModTextFileSetContent("data/scripts/perks/glass_cannon_enemy.lua", content)
+  ModTextFileGetContent("")
 end
 
 return {
