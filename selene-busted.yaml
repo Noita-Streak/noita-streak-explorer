@@ -9,13 +9,35 @@ globals:
         required: true
   it:
     args:
-    - type: string
-      required: true
-    - type: function
-      required: true
+      - type: string
+        required: true
+      - type: function
+        required: true
+  test:
+    args:
+      - type: string
+        required: true
+      - type: function
+        required: true
+  stub:
+    args:
+      - type: table
+        required: true
+      - type: string
+        required: true
   assert.are.same:
     args:
-    - type: any
-      required: true
-    - type: any
-      required: true
+      - type: any
+        required: true
+      - type: any
+        required: true
+  assert.equals:
+    args:
+      - type: any
+        required: true
+      - type: any
+        required: true
+  assert.stub:
+    args:
+      - type: function
+        required: true
