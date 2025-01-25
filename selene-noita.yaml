@@ -60,3 +60,31 @@ globals:
         required: true
       - type: table
         required: true
+  mod_settings_get_version:
+    args:
+      - type: string
+        required: true
+  mod_settings_update:
+    args:
+      - type: string
+        required: true
+      - type: table
+        required: true
+      - type: string
+        required: true
+  mod_settings_gui_count:
+    args:
+      - type: string
+        required: true
+      - type: table
+        required: true
+  mod_settings_gui:
+    args:
+      - type: string
+        required: true
+      - type: table
+        required: true
+      - type: table
+        required: true
+      - type: bool
+        required: true

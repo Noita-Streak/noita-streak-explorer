@@ -2,6 +2,7 @@ syntax = "Lua51"
 line_endings = "Unix"
 indent_type = "Spaces"
 indent_width = 2
+column_width = 140
 
 [sort_requires]
 enabled = true
