@@ -8,6 +8,7 @@ globals:
     args:
       - type: string
         required: true
+    must_use: true
   ModTextFileSetContent:
     args:
       - type: string
@@ -24,8 +25,44 @@ globals:
         required: false
       - type: string
         required: false
+    must_use: true
+  ModSettingGet:
+    args:
+      - type: string
+        required: true
+    must_use: true
+  ModSettingSet:
+    args:
+      - type: string
+        required: true
+      - type: [bool, number, string]
+        required: true
+  GamePrint:
+    args:
+      - type: string
+        required: true
+  GameGetFrameNum:
+    args: []
+  OnModPreInit:
+    args: []
+  OnModInit:
+    args: []
+  OnModPostInit:
+    args: []
+  OnPlayerSpawned:
+    args:
+      - type: number
+        required: true
+  OnWorldInitialized:
+    args: []
+  OnWorldPreUpdate:
+    args: []
+  OnWorldPostUpdate:
+    args: []
+  OnMagicNumbersAndWorldSeedInitialized:
+    args: []
 
-######### settings.lua
+  ######### settings.lua
   mod_settings_version:
     property: "override-fields"
   mod_settings:
@@ -37,6 +74,18 @@ globals:
   ModSettingGetNextValue:
     args:
       - type: string
+        required: true
+  ModSettingsUpdate:
+    args:
+      - type: string
+        required: true
+  ModSettingsGuiCount:
+    args: []
+  ModSettingsGui:
+    args:
+      - type: table
+        required: true
+      - type: any
         required: true
   GuiButton:
     args:

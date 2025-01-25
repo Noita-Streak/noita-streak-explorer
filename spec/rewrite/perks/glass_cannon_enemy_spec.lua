@@ -25,9 +25,9 @@ local test_items = {
 
 describe("code replace test", function()
   for _, test_case in ipairs(test_items) do
-    it(test_case.title, function()
+    test(test_case.title, function()
       local result = target.rewrite_code(test_case.input[1])
-      assert.are.same(result, test_case.output[1])
+      assert.equals(result, test_case.output[1])
     end)
   end
 end)
