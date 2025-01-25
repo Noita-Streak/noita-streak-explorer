@@ -27,3 +27,28 @@ jobs:
           version: 2.0.2
           # CLI arguments
           args: --check .
+  validate-mod-xml:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: sudo apt-get install -y xmlstarlet
+
+      - name: Validate mod.xml
+        run: |
+          request_no_api_restriction=$(xmlstarlet sel -t -v '//Mod/@request_no_api_restrictions' mod.xml)
+          is_game_mode=$(xmlstarlet sel -t -v '//Mod/@is_game_mode' mod.xml)
+
+          if [ "$request_no_api_restriction" != "0" ]; then
+            echo "Error: request_no_api_restrictions must be '0'"
+            exit 1
+          fi
+
+          if [ "$is_game_mode" != "1" ]; then
+            echo "Error: is_game_mode must be '1'"
+            exit 1
+          fi
+          echo "mod.xml validation passed"
