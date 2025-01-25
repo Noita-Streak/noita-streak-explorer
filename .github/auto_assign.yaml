@@ -1,8 +1,11 @@
 # Set to true to add reviewers to pull requests
 addReviewers: true
 
+reviewers:
+  - den3606
+
 # Set addAssignees to 'author' to set the PR creator as the assignee.
-addAssignees: den3606
+addAssignees: author
 
 # A number of reviewers added to the pull request
 # Set 0 to add all the reviewers (default: 0)
