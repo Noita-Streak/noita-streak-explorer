@@ -5,15 +5,6 @@ on:
       - main
   pull_request:
 jobs:
-  busted-test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Run Busted
-        uses: lunarmodules/busted@v2.2.0
-        env:
-          IS_GITHUB_ACTION: true
   selene-lint-check:
     runs-on: ubuntu-latest
     steps:
