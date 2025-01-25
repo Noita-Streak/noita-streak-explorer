@@ -2,4 +2,4 @@ addReviewers: true
 reviewers:
   - den3606
 addAssignees: author
-numberOfReviewers: 1
+numberOfReviewers: 0
