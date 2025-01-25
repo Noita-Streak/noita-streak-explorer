@@ -2,6 +2,7 @@
   "cSpell.words": [
     "Deutsch",
     "dofile",
+    "dotenv",
     "dylib",
     "ehthumbs",
     "encryptable",
@@ -12,6 +13,7 @@
     "imega",
     "Italiano",
     "luacheck",
+    "luaunit",
     "lunarmodules",
     "msix",
     "noita",
