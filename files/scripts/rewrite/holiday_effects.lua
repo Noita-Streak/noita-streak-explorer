@@ -40,10 +40,10 @@ local function rewrite()
   replace("data/scripts/biome_scripts.lua", hash.biome_scripts, "( month == 2 ) and ( day == 14 )", "false")
   replace("data/scripts/items/potion.lua", hash.potion, "month == 2 and day == 14", "false")
 
----TODO バレンタインデー以外の無効化を実装する
+  --TODO バレンタインデー以外の無効化を実装する
 end
 
 return {
   rewrite = rewrite,
---  rewrite_code = rewrite_code,
+  --rewrite_code = rewrite_code,
 }

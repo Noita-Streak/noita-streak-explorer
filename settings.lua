@@ -77,7 +77,7 @@ local settings_text = {
     ui_description = {
       ja = "次のイベントを無効化します。\n2月14日 バレンタインデー",
     },
-  }
+  },
 }
 
 local function mod_setting_change_game_mode_callback(_mod_id, _gui, _in_main_menu, _game_mode_setting, _old_mode_name, new_mode_name)
