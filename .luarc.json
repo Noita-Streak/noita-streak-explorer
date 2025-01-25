@@ -3,7 +3,17 @@
   "runtime.version": "Lua 5.1",
   "hint.enable": true,
   "diagnostics.globals": [
-  ],
+        "mod_settings_version",
+        "MOD_SETTING_SCOPE_RUNTIME",
+        "mod_settings",
+        "mod_setting_group_x_offset",
+        "mod_setting_get_id",
+        "mod_settings_gui_count",
+        "mod_settings_gui",
+        "mod_settings_update",
+        "mod_settings_get_version",
+        "mod_setting_tooltip"
+    ],
   "diagnostics.ignoredFiles": "Disable",
   "workspace.ignoreDir": [
     ".vscode",
