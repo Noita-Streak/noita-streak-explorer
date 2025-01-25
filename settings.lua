@@ -1,59 +1,58 @@
 dofile("data/scripts/lib/mod_settings.lua")
 
----@diagnostic disable-next-line: unused-local
-local mod_id = "noita-streak-explorer"
-mod_settings_version = 1
+-- local mod_id = "noita-streak-explorer"
+-- mod_settings_version = 1
 
--- Localize
-local function language()
-  local current_language = GameTextGet("$current_language")
-  if current_language == "English" then
-    return "en"
-  end
-  if current_language == "русский" then
-    return "ru"
-  end
-  if current_language == "Português (Brasil)" then
-    return "pt-br"
-  end
-  if current_language == "Español" then
-    return "es-es"
-  end
-  if current_language == "Deutsch" then
-    return "de"
-  end
-  if current_language == "Français" then
-    return "fr-fr"
-  end
-  if current_language == "Italiano" then
-    return "it"
-  end
-  if current_language == "Polska" then
-    return "pl"
-  end
-  if current_language == "简体中文" then
-    return "zh-cn"
-  end
-  if current_language == "日本語" then
-    return "ja"
-  end
-  if current_language == "한국어" then
-    return "ko"
-  end
+-- -- Localize
+-- local function language()
+--   local current_language = GameTextGet("$current_language")
+--   if current_language == "English" then
+--     return "en"
+--   end
+--   if current_language == "русский" then
+--     return "ru"
+--   end
+--   if current_language == "Português (Brasil)" then
+--     return "pt-br"
+--   end
+--   if current_language == "Español" then
+--     return "es-es"
+--   end
+--   if current_language == "Deutsch" then
+--     return "de"
+--   end
+--   if current_language == "Français" then
+--     return "fr-fr"
+--   end
+--   if current_language == "Italiano" then
+--     return "it"
+--   end
+--   if current_language == "Polska" then
+--     return "pl"
+--   end
+--   if current_language == "简体中文" then
+--     return "zh-cn"
+--   end
+--   if current_language == "日本語" then
+--     return "ja"
+--   end
+--   if current_language == "한국어" then
+--     return "ko"
+--   end
 
-  return "en"
-end
+--   return "en"
+-- end
 
-local settings_text = {
-  valentines = {
-    ui_name = {
-      ja = "呪文エディタショートカットキー",
-    },
-    ui_description = {
-      ja = "ショートカットキーを入力してください(a-z0-9)",
-    },
-  },
-}
+-- local settings_text = {
+--   valentines = {
+--     ui_name = {
+--       ja = "呪文エディタショートカットキー",
+--     },
+--     ui_description = {
+--       ja = "ショートカットキーを入力してください(a-z0-9)",
+--     },
+--   },
+-- }
 
 mod_settings = {
   -- サンプル
