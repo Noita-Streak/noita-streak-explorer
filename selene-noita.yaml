@@ -61,7 +61,18 @@ globals:
     args: []
   OnMagicNumbersAndWorldSeedInitialized:
     args: []
-
+  spawn_dragonspot:
+    args:
+      - type: number
+        required: true
+      - type: number
+        required: true
+  ModLuaFileAppend:
+    args:
+      - type: string
+        required: true
+      - type: string
+        required: true
   ######### settings.lua
   mod_settings_version:
     property: "override-fields"

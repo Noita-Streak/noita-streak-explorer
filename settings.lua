@@ -69,6 +69,14 @@ local settings_text = {
       ja = "敵パーク「ガラスキャノン」は倍率計算が間違っている可能性が高いため、\n本来想定されていたであろう値に修正します。\nまた、汚れ等の読み込まれていなかったオプションも適応させます。",
     },
   },
+  disable_dragon_in_jungle = {
+    ui_name = {
+      ja = "ジャングルでドラゴンがでる問題を修正する",
+    },
+    ui_description = {
+      ja = "ナイトメアではジャングルにてドラゴンのスポーンエリアが定義されています。\nそのためバイオーム書き換えにより、ドラゴンが出現する可能性があります。\nジャングルのバイオームに設定されているドラゴンのスポーンを無効化します。",
+    },
+  },
 }
 
 local function mod_setting_change_game_mode_callback(_mod_id, _gui, _in_main_menu, _game_mode_setting, _old_mode_name, new_mode_name)
@@ -97,6 +105,14 @@ mod_settings = {
     id = "option.fix_glass_cannon_enemy",
     ui_name = settings_text.fix_glass_cannon_enemy.ui_name[language()],
     ui_description = settings_text.fix_glass_cannon_enemy.ui_description[language()],
+    value_default = false,
+    scope = MOD_SETTING_SCOPE_NEW_GAME,
+    hidden = true,
+  },
+  {
+    id = "option.disable_dragon_in_jungle",
+    ui_name = settings_text.disable_dragon_in_jungle.ui_name[language()],
+    ui_description = settings_text.disable_dragon_in_jungle.ui_description[language()],
     value_default = false,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
     hidden = true,

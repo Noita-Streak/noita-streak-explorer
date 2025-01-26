@@ -10,6 +10,15 @@ local function rewrite()
   if should_glass_cannon_fix then
     glass_cannon_enemy.rewrite()
   end
+
+  -- NOTE: ナイトメアドラゴンのスポーン無効化修正
+  local should_disable_dragon_in_jungle = ModSettingGet(CONSTS.MOD_SETTINGS.DISABLE_DRAGON_IN_JUNGLE)
+  if should_disable_dragon_in_jungle == nil then
+    should_disable_dragon_in_jungle = false
+  end
+  if should_disable_dragon_in_jungle then
+    ModLuaFileAppend("data/scripts/biome/rainforest.lua", "mods/noita-streak-explorer/files/rewrite/scripts/biome/rainforest.lua")
+  end
 end
 
 return {
