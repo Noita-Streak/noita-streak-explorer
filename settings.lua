@@ -69,6 +69,15 @@ local settings_text = {
       ja = "敵パーク「ガラスキャノン」は倍率計算が間違っている可能性が高いため、\n本来想定されていたであろう値に修正します。\nまた、汚れ等の読み込まれていなかったオプションも適応させます。",
     },
   },
+  disable_holiday_effects = {
+    ui_name = {
+      ja = "季節イベントを無効化する",
+    },
+    -- TODO 他のイベントも記載する
+    ui_description = {
+      ja = "次のイベントを無効化します。\n2月14日 バレンタインデー",
+    },
+  },
 }
 
 local function mod_setting_change_game_mode_callback(_mod_id, _gui, _in_main_menu, _game_mode_setting, _old_mode_name, new_mode_name)
@@ -97,6 +106,14 @@ mod_settings = {
     id = "option.fix_glass_cannon_enemy",
     ui_name = settings_text.fix_glass_cannon_enemy.ui_name[language()],
     ui_description = settings_text.fix_glass_cannon_enemy.ui_description[language()],
+    value_default = false,
+    scope = MOD_SETTING_SCOPE_NEW_GAME,
+    hidden = true,
+  },
+  {
+    id = "option.disable_holiday_effects",
+    ui_name = settings_text.disable_holiday_effects.ui_name[language()],
+    ui_description = settings_text.disable_holiday_effects.ui_description[language()],
     value_default = false,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
     hidden = true,
