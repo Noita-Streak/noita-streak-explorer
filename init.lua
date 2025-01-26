@@ -1,4 +1,4 @@
-dofile_once("mods/noita-streak-explorer/files/scripts/rewrite/entry.lua").rewrite()
+dofile_once("mods/noita-streak-explorer/files/rewrite/entry.lua").rewrite()
 local dotenv = dofile_once("mods/noita-streak-explorer/libs/env.lua")
 
 dotenv.load_dotenv("mods/noita-streak-explorer/.env")

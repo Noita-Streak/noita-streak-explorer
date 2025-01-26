@@ -1,5 +1,5 @@
 local CONSTS = dofile_once("mods/noita-streak-explorer/files/scripts/const.lua")
-local glass_cannon_enemy = dofile_once("mods/noita-streak-explorer/files/scripts/rewrite/perks/glass_cannon_enemy.lua")
+local glass_cannon_enemy = dofile_once("mods/noita-streak-explorer/files/rewrite/scripts/perks/glass_cannon_enemy.lua")
 
 local function rewrite()
   -- NOTE: ガラスキャノンの修正
