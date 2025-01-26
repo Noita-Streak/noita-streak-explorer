@@ -20,7 +20,7 @@ local function rewrite()
   local content = ModTextFileGetContent("data/scripts/perks/glass_cannon_enemy.lua")
 
   local md5 = dofile_once("mods/noita-streak-explorer/libs/md5/md5.lua")
-  local hash = dofile_once("mods/noita-streak-explorer/files/rewrite/scripts/hash.lua")
+  local hash = dofile_once("mods/noita-streak-explorer/files/rewrite/hash.lua")
 
   local result = md5.sumhexa(content)
   local valid = result == hash.glass_cannon_enemy
