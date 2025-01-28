@@ -7,15 +7,15 @@ globals:
         required: true
       - type: function
         required: true
+  test:
+    args:
+      - type: string
+        required: true
+      - type: function
+        required: true
   it:
     args:
-    - type: string
-      required: true
-    - type: function
-      required: true
-  assert.are.same:
-    args:
-    - type: any
-      required: true
-    - type: any
-      required: true
+      - type: string
+        required: true
+      - type: function
+        required: true

@@ -1,6 +1,12 @@
 <Mod
 	name="noita-streak-explorer"
-	description="For Streak Settings MOD"
+	description="Add Streak Mode"
+	ui_newgame_name="Streak Mode"
+	ui_newgame_description="Streakレギュレーションに遵守したゲームモードです。
+どのレギュレーションに従うかは、オプションで選択してください。"
+	ui_newgame_gfx_banner_bg="mods/noita-streak-explorer/files/menu_banner_background.png"
+	ui_newgame_gfx_banner_fg="mods/noita-streak-explorer/files/menu_banner_overlay.png"
 	request_no_api_restrictions="0"
->
+	is_game_mode="1"
+	>
 </Mod>

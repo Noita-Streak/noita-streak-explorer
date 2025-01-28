@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "sumneko.lua",
+    "kampfkarren.selene-vscode",
+    "johnnymorganz.stylua",
+    "evaisa.vscode-noita-api",
+    "editorconfig.editorconfig",
+    "tamasfe.even-better-toml",
+    "pomdtr.excalidraw-editor",
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker",
+    "aaron-bond.better-comments"
+  ]
+}

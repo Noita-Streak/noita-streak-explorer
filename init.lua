@@ -1,32 +1,33 @@
-dofile_once("mods/noita-streak-explorer/files/scripts/rewrite/entry.lua")
+dofile_once("mods/noita-streak-explorer/files/rewrite/entry.lua").rewrite()
 
--- function OnModPreInit()
--- 	print("Mod - OnModPreInit()")
--- end
+local content = ModTextFileGetContent("data/translations/common.csv")
+local noita_streak_explorer_content = ModTextFileGetContent("mods/noita-streak-explorer/files/translations/common.csv")
+ModTextFileSetContent("data/translations/common.csv", content .. noita_streak_explorer_content)
 
--- function OnModInit()
--- 	print("Mod - OnModInit()")
--- end
+function OnModPreInit()
+  print("Mod - OnModPreInit()")
+end
 
--- function OnModPostInit()
--- 	print("Mod - OnModPostInit()")
--- end
+function OnModInit()
+  print("Mod - OnModInit()")
+end
 
--- function OnPlayerSpawned( player_entity )
--- 	GamePrint( "OnPlayerSpawned() - Player entity id: " .. tostring(player_entity) )
--- end
+function OnModPostInit()
+  print("Mod - OnModPostInit()")
+end
 
--- function OnWorldInitialized()
--- 	GamePrint( "OnWorldInitialized() " .. tostring(GameGetFrameNum()) )
--- end
+function OnPlayerSpawned(_player_entity) end
 
--- function OnWorldPreUpdate()
--- 	GamePrint( "Pre-update hook " .. tostring(GameGetFrameNum()) )
--- end
+function OnWorldInitialized()
+  -- GamePrint("OnWorldInitialized() " .. tostring(GameGetFrameNum()))
+end
 
--- function OnWorldPostUpdate()
--- 	GamePrint( "Post-update hook " .. tostring(GameGetFrameNum()) )
--- end
+function OnWorldPreUpdate()
+  -- GamePrint("Pre-update hook " .. tostring(GameGetFrameNum()))
+end
 
--- function OnMagicNumbersAndWorldSeedInitialized()
--- end
+function OnWorldPostUpdate()
+  -- GamePrint("Post-update hook " .. tostring(GameGetFrameNum()))
+end
+
+function OnMagicNumbersAndWorldSeedInitialized() end

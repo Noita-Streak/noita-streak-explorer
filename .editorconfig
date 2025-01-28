@@ -15,7 +15,7 @@ max_line_length = 0
 
 [*.lua]
 indent_size = 2
-max_line_length = 120
+max_line_length = 140
 
 [*.md]
 trim_trailing_whitespace = false
