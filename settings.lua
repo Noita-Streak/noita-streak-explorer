@@ -77,6 +77,15 @@ local settings_text = {
       ja = "ナイトメアではジャングルにてドラゴンのスポーンエリアが定義されています。\nそのためバイオーム書き換えにより、ドラゴンが出現する可能性があります。\nジャングルのバイオームに設定されているドラゴンのスポーンを無効化します。",
     },
   },
+  disable_holiday_effects = {
+    ui_name = {
+      ja = "季節イベントを無効化する",
+    },
+    -- TODO 他のイベントも記載する
+    ui_description = {
+      ja = "次のイベントを無効化します。\n2月14日 バレンタインデー",
+    },
+  },
 }
 
 local function mod_setting_change_game_mode_callback(_mod_id, _gui, _in_main_menu, _game_mode_setting, _old_mode_name, new_mode_name)
@@ -113,6 +122,14 @@ mod_settings = {
     id = "option.disable_dragon_in_jungle",
     ui_name = settings_text.disable_dragon_in_jungle.ui_name[language()],
     ui_description = settings_text.disable_dragon_in_jungle.ui_description[language()],
+    value_default = false,
+    scope = MOD_SETTING_SCOPE_NEW_GAME,
+    hidden = true,
+  },
+  {
+    id = "option.disable_holiday_effects",
+    ui_name = settings_text.disable_holiday_effects.ui_name[language()],
+    ui_description = settings_text.disable_holiday_effects.ui_description[language()],
     value_default = false,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
     hidden = true,
