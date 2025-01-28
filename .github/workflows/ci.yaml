@@ -47,8 +47,8 @@ jobs:
             exit 1
           fi
 
-          if [ "$is_game_mode" != "1" ]; then
-            echo "Error: is_game_mode must be '1'"
+          if [ "$is_game_mode" != "0" ]; then
+            echo "Error: is_game_mode must be '0'"
             exit 1
           fi
           echo "mod.xml validation passed"
