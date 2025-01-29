@@ -73,6 +73,10 @@ globals:
         required: true
       - type: string
         required: true
+  ModMaterialsFileAdd:
+    args:
+      - type: string
+        required: true
   ######### settings.lua
   mod_settings_version:
     property: "override-fields"

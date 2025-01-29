@@ -4,6 +4,8 @@ local content = ModTextFileGetContent("data/translations/common.csv")
 local noita_streak_explorer_content = ModTextFileGetContent("mods/noita-streak-explorer/files/translations/common.csv")
 ModTextFileSetContent("data/translations/common.csv", content .. noita_streak_explorer_content)
 
+ModMaterialsFileAdd("mods/noita-streak-explorer/files/materials.xml")
+
 function OnModPreInit()
   print("Mod - OnModPreInit()")
 end
