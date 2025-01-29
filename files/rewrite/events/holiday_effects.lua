@@ -11,7 +11,7 @@ local function replace_if_valid(file, expectedHash, fromToTable)
   local result = md5.sumhexa(content)
   local valid = result == expectedHash
   if not valid then
-    error(table.concat({ "INJECTION (REPLACE) FAILED: INVALID HASH/nFile: ", file}))
+    error(table.concat({ "INJECTION (REPLACE) FAILED: INVALID HASH/nFile: ", file }))
     return
   end
 
