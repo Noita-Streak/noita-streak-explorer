@@ -9,6 +9,7 @@ local function rewrite()
 
   replace(rewriteDir .. "data/scripts/biome_scripts.lua", hash.biome_scripts)
   replace(rewriteDir .. "data/scripts/items/potion.lua", hash.potion)
+  replace(rewriteDir .. "data/scripts/items/potion_starting.lua", hash.potion_starting)
 end
 
 return {
